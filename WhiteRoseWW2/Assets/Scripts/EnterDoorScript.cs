@@ -5,10 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class EnterDoorScript : MonoBehaviour
 {
-    [SerializeField] private int levelToLoad;
+    [SerializeField] private GameObject loader;
     public void EnterDoor()
     {
-        SceneManager.LoadScene(levelToLoad);
-        Debug.Log(message: "Активно");
+        loader.SetActive(true);
     }
 }

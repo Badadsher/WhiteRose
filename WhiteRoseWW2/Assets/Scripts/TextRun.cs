@@ -10,28 +10,46 @@ public class TextRun : MonoBehaviour
     [SerializeField] private float typingSpeed = 0.1f;
     [SerializeField] private TextMeshProUGUI textMeshPro;
 
-    [SerializeField] private string textToType;
+   // [SerializeField] private string textToType;
 
 
-  
+    [SerializeField] private TextMeshProUGUI printedText;
+    [SerializeField] private string startString;
     private void Start()
     {
-        textToType = textMeshPro.text;
-        textMeshPro.text = "";
-        StartCoroutine(TypeText());
+        printedText.text = "";
+
+        StartCoroutine(PrintText(startString));
     }
 
-    IEnumerator TypeText()
+    private IEnumerator PrintText(string str)
     {
-        foreach (char c in textToType)
+        foreach (char letter in str)
         {
-            textMeshPro.text += c;
-            yield return new WaitForSeconds(typingSpeed);
+            printedText.text += letter;
+            yield return new WaitForSeconds(0.05f);
         }
     }
 
-    public void SetTypingSpeed(float speed)
-    {
-        typingSpeed = speed;
-    }
+    /* private void Start()
+     {
+         textToType = textMeshPro.text;
+         textMeshPro.text = "";
+         StartCoroutine(TypeText());
+     }
+
+     IEnumerator TypeText()
+     {
+         foreach (char c in textToType)
+         {
+             textMeshPro.text += c;
+             yield return new WaitForSeconds(typingSpeed);
+         }
+     }
+
+     public void SetTypingSpeed(float speed)
+     {
+         typingSpeed = speed;
+     }
+    */
 }

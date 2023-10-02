@@ -204,8 +204,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0043999553, y: 0.002300024, z: 0}
-    m_Extent: {x: 1.9970999, y: 2, z: 0}
+    m_Center: {x: 0.0039999485, y: 0.008249998, z: 0}
+    m_Extent: {x: 2.0033, y: 2.00035, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -10445,8 +10445,8 @@ GameObject:
   - component: {fileID: 1298097437}
   - component: {fileID: 1298097436}
   - component: {fileID: 1298097434}
-  - component: {fileID: 1298097442}
   - component: {fileID: 1298097443}
+  - component: {fileID: 1298097444}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -10703,19 +10703,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1298097442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298097432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84f269c0cff28864c89eaa68d9241416, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSound: {fileID: 1298097434}
 --- !u!81 &1298097443
 AudioListener:
   m_ObjectHideFlags: 0
@@ -10724,6 +10711,20 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1298097432}
   m_Enabled: 1
+--- !u!114 &1298097444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298097432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec3f42c53123864487c57bcc4c4d99f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSound: {fileID: 1298097434}
+  movebt: {fileID: 1299862881}
 --- !u!1 &1299862879
 GameObject:
   m_ObjectHideFlags: 0
@@ -11179,8 +11180,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0022499561, y: 0.004899919, z: 0}
-    m_Extent: {x: 1.99945, y: 2.0031, z: 0}
+    m_Center: {x: -0.00050002337, y: -0.0030499697, z: 0}
+    m_Extent: {x: 1.9984, y: 2.00395, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

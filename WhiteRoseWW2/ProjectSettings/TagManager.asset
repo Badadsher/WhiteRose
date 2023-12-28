@@ -7,6 +7,7 @@ TagManager:
   - Apple
   - Enemy
   - Sklad
+  - Tank
   layers:
   - Default
   - TransparentFX
